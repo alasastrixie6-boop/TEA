@@ -1,24 +1,107 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Menu & Order - Tea Heaven</title><link rel="stylesheet" href="css/style.css"></head><body>
-<header class="site-header"><div class="container nav-wrap"><div class="brand">Tea Heaven Order</div><button class="nav-toggle">&#9776;</button><nav class="nav-links"><a href="index.html">Home</a><a href="menu.html">Menu & Order</a><a href="queue.html">Queue Status</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header>
-<main><div class="container">
-<h1>Menu & Order</h1>
-<input id="searchInput" placeholder="Search drinks..." style="width:100%;padding:.6rem;margin-bottom:.5rem;border:1px solid #ccc;border-radius:6px">
-<select id="catFilter" style="width:100%;padding:.6rem;margin-bottom:1rem;border:1px solid #ccc;border-radius:6px">
-  <option>All</option><option>Milk Tea</option><option>Matcha</option><option>Specialty</option><option>Fruit Tea</option>
-</select>
-<div id="menuGrid" class="grid cards"></div>
-<h2>Cart</h2>
-<div id="cartBox"></div>
-<p>Total: <strong id="cartTotal">PHP 0.00</strong></p>
-<h3>Checkout</h3>
-<div class="form-group"><label>Name</label><input id="custName"></div>
-<div class="form-group"><label>Phone</label><input id="custPhone"></div>
-<div class="form-group"><label>Email (optional)</label><input id="custEmail"></div>
-<div class="form-group"><label>Notes</label><textarea id="custNotes"></textarea></div>
-<p class="error" id="formError"></p>
-<button class="btn" id="checkoutBtn">Place Order</button>
-<div id="receipt" class="hidden"></div>
-</div></main>
-<footer>&copy; 2026 Tea Heaven Order</footer>
-<script src="js/main.js"></script><script src="js/menu.js"></script><script src="js/ordering.js"></script>
-</body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu &amp; Order - Queue-Tea Heaven Café</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <div class="brand">Queue-Tea Heaven Café</div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      &#9776;
+    </button>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu &amp; Order</a>
+      <a href="queue.html">Queue Status</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <h1>Menu &amp; Order</h1>
+
+    <input
+      id="searchInput"
+      type="search"
+      placeholder="Search drinks and food..."
+      aria-label="Search menu"
+      style="width:100%;padding:.6rem;margin-bottom:.5rem;border:1px solid #ccc;border-radius:6px"
+    >
+
+    <select
+      id="catFilter"
+      aria-label="Filter menu category"
+      style="width:100%;padding:.6rem;margin-bottom:1rem;border:1px solid #ccc;border-radius:6px"
+    >
+      <option value="All">All</option>
+      <option value="Drinks">Drinks</option>
+      <option value="Food &amp; Desserts">Food &amp; Desserts</option>
+    </select>
+
+    <div id="menuGrid" class="grid cards"></div>
+
+    <section>
+      <h2>Cart</h2>
+      <div id="cartBox"></div>
+
+      <p>
+        Total:
+        <strong id="cartTotal">PHP 0.00</strong>
+      </p>
+    </section>
+
+    <section>
+      <h3>Checkout</h3>
+
+      <div class="form-group">
+        <label for="custName">Name</label>
+        <input id="custName" name="custName" autocomplete="name">
+      </div>
+
+      <div class="form-group">
+        <label for="custPhone">Phone</label>
+        <input id="custPhone" name="custPhone" type="tel" autocomplete="tel">
+      </div>
+
+      <div class="form-group">
+        <label for="custEmail">Email (optional)</label>
+        <input id="custEmail" name="custEmail" type="email" autocomplete="email">
+      </div>
+
+      <div class="form-group">
+        <label for="custNotes">Notes</label>
+        <textarea id="custNotes" name="custNotes"></textarea>
+      </div>
+
+      <p class="error" id="formError"></p>
+
+      <button class="btn" id="checkoutBtn" type="button">
+        Place Order
+      </button>
+
+      <div id="receipt" class="hidden"></div>
+    </section>
+
+  </div>
+</main>
+
+<footer>&copy; 2026 Queue-Tea Heaven Café</footer>
+
+<script src="js/main.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/ordering.js"></script>
+
+</body>
+</html>
