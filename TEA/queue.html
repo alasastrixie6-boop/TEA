@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Queue Status - Tea Heaven</title><link rel="stylesheet" href="css/style.css"></head><body>
+<header class="site-header"><div class="container nav-wrap"><div class="brand">Tea Heaven Order</div><button class="nav-toggle">&#9776;</button><nav class="nav-links"><a href="index.html">Home</a><a href="menu.html">Menu & Order</a><a href="queue.html">Queue Status</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav></div></header>
+<main><div class="container">
+<h1>Queue Status</h1>
+<div class="form-group"><label>Lookup Order (ID or Queue #)</label><input id="lookupInput"><button class="btn" id="lookupBtn">Lookup</button></div>
+<div id="lookupResult"></div>
+<button class="btn secondary" id="processBtn">Process Next (FIFO)</button>
+<h2>Live Queue Board</h2>
+<div id="queueBoard" class="grid cards"></div>
+</div></main>
+<footer>&copy; 2026 Tea Heaven Order</footer>
+<script src="js/main.js"></script><script src="js/queue.js"></script>
+</body></html>
