@@ -99,14 +99,7 @@ const PRODUCTS = [
     img: 'Cheesecake Oreo Sans Cuisson.jpg',
     avail: true
   },
-  {
-    id: 'f4',
-    name: 'Cinnamon Sweetened Ice Cream',
-    cat: 'Food & Desserts',
-    base: 100,
-    img: 'Cinnamon Sweetened Ice Cream.jpg',
-    avail: true
-  },
+
   {
     id: 'f5',
     name: 'Cookie Butter Cupcakes',
